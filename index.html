@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logomaserati.jpg" type="image/x-icon">
+    <title>Mon site vitrine</title>
+</head>
+
+<body class="bg-[#8d99ae]">
+    <!-- NAVBAR -->
+    <nav class="top-0 z-10 fixed w-full flex flex-wrap items-center justify-between py-4 bg-[#8d99ae] text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+            <a class="text-xl text-black" href="#"><img src="./img/logo.png" alt="logo" width="90"></a>
+            <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav flex flex-col pl-0 list-style-none ml-auto leading-10">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-[#2b2d42] hover:text-[#ef233c] focus:text-[#ef233c]" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item pr-2 ">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" href="#">Marque</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" href="#models">Models</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" href="#">Trouver un véhicule</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" href="#">Ownership</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" href="#">Restez en contact</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-[#edf2f4] hover:text-[#ef233c] focus:text-[#ef233c] p-0" ref="#">Actualités</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide relative h-screen mt-20" data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active relative float-left w-full">
+                <img src="./img/img_carousel/210480M.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-2xl">Levante Hybrid</h5>
+                    <p class="text-sm">Performance Charched</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/Ghibli_Grey_3-4_front_passenger_side.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-2xl">Ghibli Hybrid</h5>
+                    <p class="text-sm">Performance Charched</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/made_audacious_hp_desktop.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-xl">Maserati et David Beckham</h5>
+                    <p>Made Audacious</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/Maserati_bandiera_BCW_low.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-xl">Trofeo</h5>
+                    <p>The Art of Fast</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/Maserati_Grecale_hero_desktop.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-xl">Grecale</h5>
+                    <p>Rendez votre quotidien exceptionnel</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/mc20-hero.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-xl">MC20</h5>
+                    <p>The first of its kind</p>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <img src="./img/img_carousel/MC_Edition_dekstop.webp" class="block w-full h-screen object-none" alt="..." />
+                <div class="carousel-caption absolute top-0 left-6">
+                    <h5 class="text-xl">MC Edition</h5>
+                    <p>Prêtes pur un nouveau tour de piste</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 id="models" class="bg-[#edf2f4] text-[#2b2d42] text-4xl font-bold p-6">Models</h1>
+    <!-- GALLERY -->
+    <div class="grid lg:grid-cols-5 md:grid-cols-1 mt-6">
+        <div class="col flex justify-center mb-6 mr-6 ml-6">
+            <div class="shadow-lg bg-[#edf2f4] max-w-sm">
+                <a href="#!">
+                    <img class="imgCards" src="./img/gh_front.webp" alt="Ghibli" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-center">Ghibli</h5>
+                    <p class="text-gray-900 text-xl font-medium mb-2 text-center">
+                        VOUS ÊTES TOUT SAUF ORDINAIRE
+                    </p>
+                    <p class="text-gray-700 text-base mb-4 text-justify">
+                        La combinaison magistrale du style, de la puissance, du comportement sportif et du confort.
+                    </p>
+                    <p class="text-gray-700 text-sm mb-4 text-center leading-none">
+                        A partir de
+                    </p>
+                    <p class="text-gray-700 text-xl mb-4 text-center leading-none">81 550 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="col flex justify-center mb-6 mr-6 ml-6">
+            <div class="shadow-lg bg-[#edf2f4] max-w-sm">
+                <a href="#!">
+                    <img class="imgCards" src="./img/gr_front.webp" alt="Grecale" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-center">Grecale</h5>
+                    <p class="text-gray-900 text-xl font-medium mb-2 text-center">
+                        L’EXCEPTIONNEL AU QUOTIDIEN
+                    </p>
+                    <p class="text-gray-700 text-base mb-4 text-justify">
+                        Vivez l’innovation, allez de l'avant, laissez l'exceptionnel entrer dans votre quotidien avec le tout nouveau SUV.
+                    </p>
+                    <p class="text-gray-700 text-sm mb-4 text-center leading-none">
+                        A partir de
+                    </p>
+                    <p class="text-gray-700 text-xl mb-4 text-center leading-none">75 450 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="col flex justify-center mb-6 mr-6 ml-6">
+            <div class="shadow-lg bg-[#edf2f4] max-w-sm">
+                <a href="#!">
+                    <img class="imgCards" src="./img/lv_front.webp" alt="Levante" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-center">Levante</h5>
+                    <p class="text-gray-900 text-xl font-medium mb-2 text-center">
+                        The Maserati of SUVs
+                    </p>
+                    <p class="text-gray-700 text-base mb-4 text-justify">
+                        L'association redoutable des meilleures performances sur route et d’excellentes capacités tout-terrain.
+                    </p>
+                    <p class="text-gray-700 text-sm mb-4 text-center leading-none">
+                        A partir de
+                    </p>
+                    <p class="text-gray-700 text-xl mb-4 text-center leading-none">87 650 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="col flex justify-center mb-6 mr-6 ml-6">
+            <div class="shadow-lg bg-[#edf2f4] max-w-sm">
+                <a href="#!">
+                    <img class="imgCards" src="./img/MC20_front.webp" alt="MC20" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-center">MC20</h5>
+                    <p class="text-gray-900 text-xl font-medium mb-2 text-center">
+                        THE FIRST OF ITS KIND
+                    </p>
+                    <p class="text-gray-700 text-base mb-4 text-justify">
+                        La supercar Maserati qui repousse les frontières du temps. Roulez avec audace vers une nouvelle ère ambitieuse.
+                    </p>
+                    <p class="text-gray-700 text-sm mb-4 text-center leading-none">
+
+                    </p>
+                    <p class="text-gray-700 text-xl mb-4 text-center leading-none"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col flex justify-center mb-6 mr-6 ml-6">
+            <div class="shadow-lg bg-[#edf2f4] max-w-sm">
+                <a href="#!">
+                    <img class="imgCards" src="./img/qp_front.webp" alt="Quattroporte" />
+                </a>
+                <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-center">Quattroporte</h5>
+                    <p class="text-gray-900 text-xl font-medium mb-2 text-center">
+                        UNE ICÔNE DE L'ÉLÉGANCE À L'ITALIENNE
+                    </p>
+                    <p class="text-gray-700 text-base mb-4 text-justify">
+                        Un mélange captivant de performances et de luxe.
+                    </p>
+                    <p class="text-gray-700 text-sm mb-4 text-center leading-none">
+                        A partir de
+                    </p>
+                    <p class="text-gray-700 text-xl mb-4 text-center leading-none">108 650 €</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FORMULAIRE -->
+    <dialog id="collectEmail" class="bg-[#edf2f4] border-0 shadow-lg p-5">
+        <form method="dialog">
+            <div class="grid grid-cols-2">
+                <div class="col m-2">
+                    <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        type="text" name="firstname" id="firstname" placeholder="Jean" disabled>
+                </div>
+                <div class="col m-2">
+                    <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        type="text" name="lastname" id="lastname" placeholder="Némar" disabled>
+                </div>
+            </div>
+            <div class="m-2">
+                <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    type="email" name="email" id="email" placeholder="exemple@email.com" disabled>
+            </div>
+            <div class="text-center m-2">
+                <textarea name="message" id="message" cols="20" rows="10" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"></textarea>
+            </div>
+            <div class="text-center">
+                <button id="closeDialog" class="rounded m-3 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    value="cancel">annulez</button>
+                <button id="confirmBtn" class="rounded m-3 inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    value="default">envoyez</button>
+            </div>
+        </form>
+    </dialog>
+
+    <footer class="bg-[#d90429] flex flex-col-reverse lg:flex-row justify-between">
+        <div class="flex flex-col text-center m-6">
+            <h3 class="text-[#edf2f4] text-xl">Coordonnées et Contacts</h3>
+            <div>
+                <i class="fab fa-facebook-square text-5xl m-0.5"></i>
+                <i class="fab fa-twitter-square text-5xl m-0.5"></i>
+                <i class="fab fa-youtube-square text-5xl m-0.5"></i>
+                <i class="fab fa-instagram-square text-5xl m-0.5"></i>
+                <i class="fab fa-pinterest-square text-5xl m-0.5"></i>
+                <i class="fab fa-linkedin text-5xl m-0.5"></i>
+            </div>
+        </div>
+        <div class="flex flex-col content-center m-6">
+            <h3 class="text-[#edf2f4] text-xl text-center">Contactez nous</h3>
+
+            <button id="openEmailDialog" type="button" class="inline-block px-6 py-2.5 bg-gray-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-700 hover:shadow-lg focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out">Cliquez ici</button>
+        </div>
+    </footer>
+    <script src="myscript.js"></script>
+</body>
+
+</html>
